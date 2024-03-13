@@ -1,0 +1,15 @@
+<form>
+  <div class="mb-3">
+    <label for="text" class="form-label">Cosa devi fare?</label>
+    <input
+      type="text"
+      class="form-control"
+      id="text"
+      name="text"
+      [(ngModel)]="text"
+    />
+  </div>
+  <button type="button" class="btn btn-primary" (click)="richiediInserimento()">
+    Aggiungi
+  </button>
+</form>

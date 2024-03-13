@@ -1,0 +1,12 @@
+<h1>Todo List</h1>
+<div class="list-group">
+  <app-todo-item
+    class="list-group-item"
+    *ngFor="let t of todos"
+    [todo]="t"
+    [ngClass]="{ 'bg-success': t.completed }"
+    (onRichiestaCompletamento)="completa($event)"
+  ></app-todo-item>
+</div>
+<hr />
+<app-todo-add (onRichiestaInserimento)="inserisci($event)"></app-todo-add>
